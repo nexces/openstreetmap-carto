@@ -23,13 +23,13 @@
 @aboriginal: #82643a;
 @religious-icon: #000000;
 
-@landcover-font-size: 10;
+@landcover-font-size: 6;
 @landcover-wrap-width-size: 30; // 3 em
 @landcover-line-spacing-size: -1.5; // -0.15 em
-@landcover-font-size-big: 12;
+@landcover-font-size-big: 8;
 @landcover-wrap-width-size-big: 36; // 3 em
 @landcover-line-spacing-size-big: -1.8; // -0.15 em
-@landcover-font-size-bigger: 15;
+@landcover-font-size-bigger: 10;
 @landcover-wrap-width-size-bigger: 45; // 3 em
 @landcover-line-spacing-size-bigger: -2.25; // -0.15 em
 @landcover-face-name: @oblique-fonts;

@@ -1,3 +1,4 @@
+
 @ferry-route: #66f;
 @ferry-route-text: @ferry-route;
 
@@ -9,6 +10,7 @@
     line-color: @ferry-route;
     line-width: 0.4;
     line-dasharray: 4,4;
+    line-opacity: 0;
     [zoom >= 11] {
       background/line-width: 1;
       line-width: 0.8;
@@ -17,6 +19,7 @@
   }
 }
 
+/*
 #ferry-routes-text {
   [zoom >= 13] {
     text-name: "[name]";
@@ -24,7 +27,8 @@
     text-placement: line;
     text-fill: @ferry-route-text;
     text-spacing: 1000;
-    text-size: 10;
+    text-size: 0;
     text-dy: -8;
   }
 }
+*/

@@ -2,7 +2,7 @@
 
 @grass: #cdebb0;        // Lch(90,32,128) also grassland, meadow, village_green, garden, allotments
 @scrub: #c8d7ab;        // Lch(84,24,122)
-@forest: #add19e;       // Lch(80,30,135)
+@forest: #d4f0c9;       // Lch(80,30,135)
 @forest-text: #46673b;  // Lch(40,30,135)
 @park: #c8facc;         // Lch(94,30,145)
 @allotments: #c9e1bf;   // Lch(87,20,135)
@@ -801,7 +801,7 @@
   }
 
   //Also landuse = forest, converted in the SQL
-  [natural = 'wood'][zoom >= 13]::wood {
+  [natural = 'wood'][zoom >= 17]::wood {
     polygon-pattern-file: url('symbols/leaftype_unknown.svg'); // Lch(55,30,135)
     [leaf_type = "broadleaved"] { polygon-pattern-file: url('symbols/leaftype_broadleaved.svg'); }
     [leaf_type = "needleleaved"] { polygon-pattern-file: url('symbols/leaftype_needleleaved.svg'); }
@@ -818,13 +818,15 @@
   [military = 'danger_area'][zoom >= 9] {
     polygon-pattern-file: url('symbols/military_red_hatch.png');
     polygon-pattern-alignment: global;
+    polygon-pattern-opacity: 0.2;
     line-color: @military;
-    line-opacity: 0.24;
+    line-opacity: 0.2;
     line-width: 1.0;
     line-offset: -0.5;
     [zoom >= 15] {
       [military = 'danger_area'][zoom >= 9] {
         polygon-pattern-file: url('symbols/danger_red_hatch.png');
+        polygon-pattern-opacity: 0.2;
         line-opacity: 0.2;
       }
       line-width: 2;

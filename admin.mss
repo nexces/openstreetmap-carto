@@ -35,19 +35,19 @@ overlapping borders correctly.
     }
     [zoom >= 7] {
       background/line-width: 2;
-      line-width: 2;
+      line-width: 4;
     }
     [zoom >= 8] {
       background/line-width: 3;
-      line-width: 3;
+      line-width: 5;
     }
     [zoom >= 9] {
       background/line-width: 3.2;
-      line-width: 3.2;
+      line-width: 5.4;
     }
     [zoom >= 10] {
       background/line-width: 6;
-      line-width: 6;
+      line-width: 7;
     }
   }
 
@@ -255,7 +255,7 @@ overlapping borders correctly.
     [zoom >= 8][zoom < 10] {
       ::fill {
         opacity: 0.05;
-        polygon-fill: green;
+        polygon-fill: #d4f0c9;
         [boundary='aboriginal_lands'],
         [boundary='protected_area'][protect_class='24'] {
           polygon-fill: @aboriginal;
@@ -265,6 +265,7 @@ overlapping borders correctly.
         opacity: 0.25;
         line-width: 1.2;
         line-color: green;
+        line-opacity: 0.2;
         [boundary='aboriginal_lands'],
         [boundary='protected_area'][protect_class='24'] {
           line-color: @aboriginal;
@@ -287,6 +288,7 @@ overlapping borders correctly.
         // line-offset is always an offset to the inner side of the polygon.
         line-offset: -0.9;
         line-color: green;
+        line-opacity: 0.2;
         [boundary='aboriginal_lands'],
         [boundary='protected_area'][protect_class='24'] {
           line-color: @aboriginal;
@@ -307,6 +309,7 @@ overlapping borders correctly.
         opacity: 0.15;
         line-width: 1.8;
         line-color: green;
+        line-opacity: 0.2;
         [boundary='aboriginal_lands'],
         [boundary='protected_area'][protect_class='24'] {
           line-color: @aboriginal;
