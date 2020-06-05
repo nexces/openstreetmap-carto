@@ -19,13 +19,13 @@
       text-margin: 7.7; // 0.7 em
     }
     [zoom >= 5] {
-      text-size: 12;
+      text-size: 13;
       text-wrap-width: 45; // 3.7 em
       text-line-spacing: -1.2; // -0.10 em
       text-margin: 8.4; // 0.7 em
     }
     [zoom >= 7] {
-      text-size: 13;
+      text-size: 14;
       text-wrap-width: 50; // 3.8 em
       text-line-spacing: -1.0; // -0.08 em
       text-margin: 9.1; // 0.7 em
@@ -52,7 +52,7 @@
   [zoom >= 5][zoom < 7][way_pixels > 3000],
   [zoom >= 7][way_pixels > 3000][way_pixels < 196000] {
     text-name: "[name]";
-    text-size: 10;
+    text-size: 0;
     text-wrap-width: 35; // 3.5 em
     text-line-spacing: -1.5; // -0.15 em
     text-margin: 7.0; // 0.7 em
@@ -62,7 +62,7 @@
     text-halo-radius: @standard-halo-radius * 1.5;
     text-placement: interior;
     [zoom >= 7] {
-      text-size: 11;
+      text-size: 0;
       text-wrap-width: 40; // 3.6 em
       text-line-spacing: -1.4; // -0.13 em
       text-margin: 7.7; // 0.7 em
@@ -130,7 +130,7 @@
     text-name: '[name]';
     text-face-name: @book-fonts;
     text-fill: @placenames;
-    text-size: 13;
+    text-size: 15;
     text-wrap-width: 65; // 5.0 em
     text-line-spacing: -0.65; // -0.05 em
     text-margin: 9.1; // 0.7 em
@@ -138,13 +138,13 @@
     text-halo-radius: @standard-halo-radius * 1.5;
 
     [zoom >= 10] {
-      text-size: 14;
+      text-size: 16;
       text-wrap-width: 70; // 5.0 em
       text-line-spacing: -0.70; // -0.05 em
       text-margin: 9.8; // 0.7 em
     }
     [zoom >= 11] {
-      text-size: 15;
+      text-size: 17;
       text-wrap-width: 75; // 5.0 em
       text-line-spacing: -0.75; // -0.05 em
       text-margin: 10.5; // 0.7 em
@@ -205,13 +205,13 @@
       text-halo-radius: @standard-halo-radius * 1.5;
 
       [zoom >= 10] {
-        text-size: 14;
+        text-size: 16;
         text-wrap-width: 70; // 5.0 em
         text-line-spacing: -0.7; // -0.05 em
         text-margin: 9.8; // 0.7 em
       }
       [zoom >= 11] {
-        text-size: 15;
+        text-size: 17;
         text-wrap-width: 75; // 5.0 em
         text-line-spacing: -0.75; // -0.05 em
         text-margin: 10.5; // 0.7 em
@@ -244,11 +244,12 @@
       shield-unlock-image: true;
       [zoom >= 7] {
         shield-file: url('symbols/place/place-4-z7.svg');
+        shield-size: 11;
       }
     }
     [zoom >= 8] {
       text-name: "[name]";
-      text-size: 10;
+      text-size: 13;
       text-fill: @placenames;
       text-face-name: @book-fonts;
       text-halo-fill: @standard-halo-fill;
@@ -257,25 +258,25 @@
       text-line-spacing: -1.0; // -0.10 em
       text-margin: 7.0; // 0.7 em
       [zoom >= 9] {
-        text-size: 12;
+        text-size: 15;
         text-wrap-width: 60; // 5.0 em
         text-line-spacing: -0.6; // -0.05 em
         text-margin: 8.4; // 0.7 em
       }
       [zoom >= 10] {
-        text-size: 13;
+        text-size: 16;
         text-wrap-width: 65; // 5.0 em
         text-line-spacing: -0.65; // -0.05 em
         text-margin: 9.1; // 0.7 em
       }
       [zoom >= 11] {
-        text-size: 14;
+        text-size: 17;
         text-wrap-width: 70; // 5.0 em
         text-line-spacing: -0.7; // -0.05 em
         text-margin: 9.8; // 0.7 em
       }
       [zoom >= 14] {
-        text-size: 15;
+        text-size: 18;
         text-wrap-width: 75; // 5.0 em
         text-line-spacing: -0.7; // -0.05 em
         text-margin: 10.5; // 0.7 em
@@ -288,7 +289,7 @@
   [category = 2] {
     [zoom >= 9][zoom < 16] {
       text-name: "[name]";
-      text-size: 10;
+      text-size: 11;
       text-fill: @placenames;
       text-face-name: @book-fonts;
       text-halo-fill: @standard-halo-fill;
@@ -296,14 +297,20 @@
       text-wrap-width: 45; // 4.5 em
       text-line-spacing: -0.8; // -0.08 em
       text-margin: 7; // 0.7 em
+      [zoom >= 10]{
+        text-size: 12;
+        text-wrap-width: 55; // 5.0 em
+        text-line-spacing: -0.55; // -0.05 em
+        text-margin: 7.7; // 0.7 em        
+      }
       [zoom >= 11] {
-        text-size: 11;
+        text-size: 13;
         text-wrap-width: 55; // 5.0 em
         text-line-spacing: -0.55; // -0.05 em
         text-margin: 7.7; // 0.7 em
       }
       [zoom >= 12] {
-        text-size: 13;
+        text-size: 14;
         text-wrap-width: 65; // 5.0 em
         text-line-spacing: -0.65; // -0.05 em
         text-margin: 8.4; // 0.7 em

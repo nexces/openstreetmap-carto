@@ -45,32 +45,32 @@ Then all three layers are added to the rendering with comp-op: darken, so that t
     }
     [zoom >= 7] {
       background/line-width: 2.2;
-      line-width: 2.2;
+      line-width: 4;
     }
     [zoom >= 8] {
       background/line-width: 3;
-      line-width: 3;
+      line-width: 5;
     }
     [zoom >= 9] {
       background/line-width: 3.5;
-      line-width: 3.5;
+      line-width: 5.4;
     }
     [zoom >= 10] {
       background/line-width: 4.5;
       line-color: @admin-boundaries-wide;
-      line-width: 4.5;
+      line-width: 7;
     }
     [zoom >= 11] {
       background/line-width: 5.5;
-      line-width: 5;
+      line-width: 8;
     }
     [zoom >= 12] {
       background/line-width: 6;
-      line-width: 6;
+      line-width: 8;
     }
     [zoom >= 13] {
       background/line-width: 7;
-      line-width: 7;
+      line-width: 8;
     }
     [zoom >= 14] {
       background/line-width: 8;
